@@ -1,97 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jacob Hicks Repair Services</title>
 
 <style>
 body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f4f4f4;
-color:#333;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
+  color:#222;
 }
 
-.header{
-background:#1f2937;
-color:white;
-padding:50px 20px;
-text-align:center;
+.hero{
+  background:linear-gradient(rgba(10,20,35,.85),rgba(10,20,35,.85)),
+  url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:80px 20px;
 }
 
-.header h1{
-font-size:40px;
-margin:0;
+.hero h1{
+  font-size:42px;
+  margin:0;
 }
 
-.phone{
-font-size:24px;
-margin-top:15px;
+.hero p{
+  font-size:22px;
+  margin:15px 0;
+}
+
+.call-btn{
+  display:inline-block;
+  background:#ff7a00;
+  color:white;
+  padding:16px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:22px;
+  font-weight:bold;
+  margin-top:15px;
 }
 
 .section{
-background:white;
-margin:20px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+  background:white;
+  margin:20px;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,.12);
 }
 
 .section h2{
-color:#0f766e;
+  color:#0d2b45;
+  margin-top:0;
 }
 
-.button{
-display:inline-block;
-background:#16a34a;
-color:white;
-padding:15px 25px;
-text-decoration:none;
-border-radius:8px;
-font-size:20px;
+.services{
+  display:grid;
+  gap:15px;
+}
+
+.card{
+  background:#f7f7f7;
+  padding:18px;
+  border-left:6px solid #ff7a00;
+  border-radius:8px;
+  font-size:18px;
+}
+
+.highlight{
+  background:#0d2b45;
+  color:white;
+  text-align:center;
+}
+
+.highlight h2{
+  color:white;
 }
 
 .footer{
-text-align:center;
-padding:20px;
-background:#1f2937;
-color:white;
+  text-align:center;
+  background:#111;
+  color:white;
+  padding:20px;
+  font-size:15px;
+}
+
+@media(max-width:600px){
+  .hero h1{font-size:34px;}
+  .hero p{font-size:19px;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-<h1>Jacob Hicks Repair Services</h1>
-<p>Small Engine Repair • Outboard Repair • Welding & Fabrication</p>
-<div class="phone">📞 318-639-7128</div>
+<div class="hero">
+  <h1>Jacob Hicks Repair Services</h1>
+  <p>Small Engine Repair • Outboard Repair • Welding & Fabrication</p>
+  <p>Serving Dubberly, Louisiana and surrounding areas</p>
+  <a class="call-btn" href="tel:13186397128">Call or Text: 318-639-7128</a>
 </div>
 
 <div class="section">
-<h2>Services Offered</h2>
-<ul>
-<li>Small Engine Repair</li>
-<li>Outboard Motor Repair</li>
-<li>Carburetor Cleaning & Rebuilds</li>
-<li>Lawn Mowers & Zero Turns</li>
-<li>Welding & Fabrication</li>
-</ul>
+  <h2>Services Offered</h2>
+  <div class="services">
+    <div class="card">Small engine repair</div>
+    <div class="card">Outboard motor repair</div>
+    <div class="card">Carburetor cleaning and rebuilds</div>
+    <div class="card">Lawn mowers and zero turns</div>
+    <div class="card">ATVs, side-by-sides, and utility equipment</div>
+    <div class="card">Small welding and fabrication jobs</div>
+  </div>
 </div>
 
 <div class="section">
-<h2>Why Choose Us?</h2>
-<p>Reliable service, honest pricing, and quality repairs. Serving Dubberly, Louisiana and surrounding areas.</p>
+  <h2>Why Choose Jacob?</h2>
+  <p>
+    Reliable repair work, honest pricing, and straight answers. Whether it is a mower,
+    outboard, carburetor, or small welding job, I’ll help get your equipment back going.
+  </p>
 </div>
 
-<div class="section">
-<h2>Contact Jacob</h2>
-<p>Call or text today for a quote.</p>
-<a class="button" href="tel:3186397128">Call Now</a>
+<div class="section highlight">
+  <h2>Need a Quote?</h2>
+  <p>Call or text today and describe what you need repaired.</p>
+  <a class="call-btn" href="tel:13186397128">Call Now</a>
 </div>
 
 <div class="footer">
-Jacob Hicks Repair Services • Dubberly, Louisiana
+  Jacob Hicks Repair Services • Dubberly, Louisiana • 318-639-7128
 </div>
 
 </body>
